@@ -1,0 +1,26 @@
+body {
+	background-color: #FEEDC2;
+	}
+div {
+  margin-left: 160px;
+  margin-right: 160px;
+  padding-left: 0;
+}
+
+
+#nav {
+  padding-left: 0px;
+  background-color: #3D99CE;
+  text-align: center;
+}
+#nav li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+#nav li:hover {
+  background-color: #2779BF;
+}
+#nav  li  a {
+  color: white;
+  text-decoration: none;
+}
