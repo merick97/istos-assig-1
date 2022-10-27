@@ -7,15 +7,14 @@
 		<meta name="keywords" content="Computers, Laptops,Peripherals, Technology">			
 		<meta name="description" content="Uniquely focused on computers and related products, 
         e-Mart offers more computers and electronic devices than any other retailer. 
-        e-Mart is deeply passionate about providing product expertise and exceptional customer service.">
+        e-Mart is deeply passionate about providing product expertise and exceptional customer service.">		
 		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="../css/style.css">	
 	</head>
 	<body>
 		<header>
-			<img src="../images/header.png" alt = "Header" id="header"> 
+			<img src="../images/header.png" alt = "Header"> 
 			<nav>
-				<ul id="nav">
+				<ul>
 					<li><a href="index.html">Main Page</a></li>
 					<li><a href="product-categories.html">Products</a></li>
 					<li><a href="contact-us.html">Contact Us </a></li>
@@ -23,29 +22,58 @@
 
 				</ul>
 			</nav>
+
+			<section>
+				<h1>Φόρμα Επικοινωνίας</h1>
+				<p>Αντιμετωπίσατε κάποιο πρόβλημα σε οποιοδήποτε σημείο της παραγγελίας σας;<br>
+					Συμπληρώστε την παρακάτω φόρμα και θα σας εξυπηρετήσουμε το συντομότερο δυνατό!</p>
+			</section>
 		</header>
+		
+
+
 
         <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" ><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">E-Mail Addres:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="phone">Phone Number:</label><br>
-            <input type="text" name="phone" id="phone"><br>
-            <label for="code">Product Code:</label><br>
-            <input type="text" name="code" id="code"><br>
-            <label for="date">Date Of Purchase:</label><br>
-            <input type="date" name="date" id="date"><br>
-            <label for="receipt">Item Receipt:</label><br>
-            <input type="file" name="receipt" id="receipt" ><br>
-            <label for="comment">Describe your problem:</label><br>
+			<fieldset>
+				<legend>Προσωπικά Στοιχεία</legend>
+				<label for="fname">Όνομα:</label><br>
+				<input type="text" id="fname" name="fname" ><br>
+				<label for="lname">Επώνυμο:</label><br>
+				<input type="text" id="lname" name="lname"><br>
+				<label for="email">E-Mail:</label><br>
+				<input type="email" id="email" name="email"><br>
+				<label for="phone">Τηλέφωνο Επικοινωνίας:</label><br>
+				<input type="tel" name="phone" id="phone"><br>
+			</fieldset>
+			<fieldset>
+				<legend>Στοιχεία Παραγγελίας</legend>
+				<label for="code">Κωδικός Προϊόντος:</label><br>
+				<input type="text" name="code" id="code"><br>
+				<label for="date">Ημερομηνία Αγοράς:</label><br>
+				<input type="date" name="date" id="date"><br>
+				<label for="receipt">Απόδειξη Αγοράς:</label><br>
+				<input type="file" name="receipt" id="receipt" ><br>
+			</fieldset>
+            <label for="comment">Περιγράψτε το πρόβλημά σας:</label><br>
             <textarea name="comment" id="comment" rows="8" cols="50"></textarea><br>
+			<input type="submit" value="Υποβολή">
+			inp
         </form>
 
-        <footer>
-			<p>&#169e-Mart 2021-2022</p>
+		<footer>
+			<p>&#169e-Mart 2021-2022</p><hr>
+			<h4>Στοιχεία Επικοινωνίας</h4>
+			<address>
+				<ul>
+					<li>p3180126@aueb.gr</li>
+					<li>p3xxxxxx@aueb.gr</li>
+				</ul>
+			</address><hr>
+			<ul>
+				<li><a href="https://www.facebook.com/">Facebook</a></li>
+				<li><a href="https://www.instagram.com/?hl=en">Instagram</a></li>
+				<li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+			</ul>
 		</footer>
 	</body>
 	
