@@ -1,4 +1,5 @@
 Exercise 2
 
 Stuff to add:
--Accesible Links
+-Accesible Links?
+-CSS Comments

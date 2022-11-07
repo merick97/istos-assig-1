@@ -1,0 +1,107 @@
+/* Main Body Style Settings*/
+body {
+	background-color: #CDDDDD;
+}
+
+/* Website Header style settings*/
+
+/* Header Image-Logo settings*/
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 124.5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main Navigatiton Menu */
+header nav {
+  width: auto !important;
+}
+header nav ul{
+  padding-left: 0px;
+  background-color: #ACBDBA;
+  text-align: center;
+}
+header nav li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+header nav li:hover {
+  background-color: #6E62E2;
+}
+header nav  li  a {
+  color: #051014;
+  text-decoration: none;
+}
+
+/*Center Page*/
+.pageCenter {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Centers*/
+.center {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.center div{
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Centers a single image or group of images*/
+.center img {
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Image settings for product details*/
+.details img {
+  float: right;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  background-color: #2E2F2F;
+  color:#ACBDBA;
+}
+
+footer ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer ul li{
+  display: inline-block;
+}
+
+footer a:link, footer a:visited{
+  background-color: #CDDDDD;
+  color: #051014;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer a:hover, footer a:active {
+  background-color: #051014;
+  color: #CDDDDD;
+}
+
