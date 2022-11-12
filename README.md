@@ -1,3 +1,6 @@
-Description
+Exercise 2
 
-Hello World!
+Stuff to add:
+-Accesible Links?
+-CSS Comments
+-Style <hr>

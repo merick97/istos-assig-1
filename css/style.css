@@ -1,26 +1,143 @@
+/* Main Body Style Settings*/
 body {
-	background-color: #FEEDC2;
-	}
-div {
-  margin-left: 160px;
-  margin-right: 160px;
-  padding-left: 0;
+	background-color: #CDDDDD;
 }
 
+/* Website Header style settings*/
 
-#nav {
+/* Header Image-Logo settings*/
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 124.5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main Navigatiton Menu */
+header nav {
+  width: auto !important;
+}
+header nav ul{
   padding-left: 0px;
-  background-color: #3D99CE;
+  background-color: #ACBDBA;
   text-align: center;
 }
-#nav li {
+header nav li {
   display: inline-block;
   padding: 10px 20px;
 }
-#nav li:hover {
-  background-color: #2779BF;
+header nav li:hover {
+  background-color: #6E62E2;
 }
-#nav  li  a {
-  color: white;
+header nav  li  a {
+  color: #051014;
   text-decoration: none;
 }
+
+/*Center Page*/
+.pageCenter {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Centers*/
+.center {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.center div{
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Centers a single image or group of images*/
+.center img {
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Image settings for product details*/
+.details img {
+  float: right;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Forms*/
+input[type=text], input[type=email], input[type=tel], input[type=date],input[type=file],textarea {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 1px solid #ACBDBA;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:#6E62E2;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;  
+}
+
+input[type=submit]:hover {
+  background-color:#3a337e;
+}
+
+.form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.form legend {
+  color:#051014;
+  padding: 5px 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  background-color: #2E2F2F;
+  color:#ACBDBA;
+}
+
+footer ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer ul li{
+  display: inline-block;
+}
+
+footer a:link, footer a:visited{
+  background-color: #CDDDDD;
+  color: #051014;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer a:hover, footer a:active {
+  background-color: #051014;
+  color: #CDDDDD;
+}
+
