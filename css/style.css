@@ -106,6 +106,94 @@ hr {
     height: auto;
   }
 
+/*Product Categories Style Settings*/
+  /*Category navigation style settings*/
+    #p_nav {
+      margin-top: 20px;
+      width: auto ;
+    }
+
+  
+    #p_nav ul{
+      padding-left: 0px;
+      text-align: center;
+      margin: 0px;
+    }
+  
+    #p_nav li {
+      display: inline-block;
+      padding-bottom: 5px;
+      font-family: 'Ubuntu Mono', monospace;
+      background-color: #051014;
+      margin-bottom: 5px;
+      width: 30%;
+    }
+
+    #p_nav li a{
+      color: #CDDDDD;
+    }
+
+    #p_nav a:link, #p_nav a:visited{
+    color: #CDDDDD;
+    background-color: #051014;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  #p_nav a:hover, #p_nav a:active {
+    color: #6E62E2;
+  }
+
+  /*category list style settings*/
+    .category {
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      background-color: #e8f0f0;
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .category h3 {
+      padding-top: 5px;
+      font-size: large;
+      font-weight: bold;
+    }
+
+    .category ul{
+      padding-left: 0px;
+      background-color: #ACBDBA;
+      text-align: center;
+    }
+
+    .category li {
+      display: block;
+      padding: 10px 20px;
+    }
+    
+    .category li:hover {
+      background-color: #6E62E2;
+    }
+
+    .category  li a {
+      color: #051014;
+      text-decoration: none;
+      font-size: larger;
+    }
+    
+    .category li:hover a, .category li a:active,.category li:hover , .category li:active{
+      background-color: #051014;
+      color: #CDDDDD;
+    }
+
+    .category img {
+      width: 50%;
+    }
+
 /*Team Member div style settings*/
   .member {
     border-radius: 5px;
