@@ -1,6 +1,7 @@
 /*Importng custom fonts*/
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap');
 
 /*Style settings that affect the whole page*/
   html {
@@ -11,22 +12,44 @@
   body {
     background-color: #CDDDDD;
     font-family: 'Roboto', sans-serif;
+    color: #051014;
   }
 
 /*Page Title(h1) style settings*/
   h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 30px;
     margin-bottom: 1px;
   }
 
-/*<hr> style settings>*/
-hr {
-  border-bottom: 1px solid #051014;
-  margin: 0px;
-  padding:0px;
-  border-radius: 5px;
-}
+/*hr style settings>*/
+  hr {
+    border-bottom: 1px solid #051014;
+    margin: 0px;
+    padding:0px;
+    border-radius: 5px;
+  }
+
+/*abbr style settings>*/
+  abbr{
+    text-decoration: none;
+  }
+
+
+/*return to previous page link style settings*/
+  #return{
+    text-decoration: none;
+    color: #051014;
+  }
+
+  #return::before {
+    content: url(../images/return.png);
+    zoom: 3%;
+  }
+
+  #return:hover {
+    text-decoration: underline;
+  }
 
 /* Website Header style settings*/
 
@@ -98,13 +121,123 @@ hr {
     height: auto;
   }
 
-/*Image settings for product details*/
+/*Product Info Style Settings*/
+  .details {
+    width: auto;
+  }
+
   .details img {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 100px 5px 100px;
+    border-radius: 25px;
+    width: 50%;
+    background-color: #e8f0f0;
+  }
+
+  .details #code {
+    color: rgb(134, 133, 133);
+    font-size: 10px;
+  }
+
+  .details #price {
+    color: gray;
+    font-size: 22px;
+  }
+
+  .details h3,h4 {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+  }
+
+  .details article {
+   color: #051014;
+   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+   border-radius: 5px;
+   background-color: #ACBDBA;
+   padding: 10px;
+  }
+
+  .details article p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .details article img {
     float: right;
     width: 250px;
     max-width: 100%;
     height: auto;
+    padding: 0;
+    background-color:#ACBDBA;
   }
+
+
+  .details table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .details table td, .details table th {
+    border: 5px solid #ACBDBA;
+    padding: 8px;
+  }
+  
+  .details table tr:nth-child(odd) {
+    background-color: white;
+  }
+  
+  .details table tr:hover {
+    background-color: lightgrey;
+  }
+  
+  .details table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#6E62E2;
+    color:#CDDDDD;
+  }
+
+  .details table td {
+    text-align: right;
+  }
+
+  .details table a {
+    color: #6E62E2;
+    text-decoration: none;
+  }
+
+  /*Product Info Style Settings*/
+    .review > p:nth-of-type(1) {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+
+    .review > p:nth-of-type(2) {
+      color:#6E62E2; 
+      font-size: 30px; 
+      margin: 0;
+    }
+
+    .review fieldset {
+      margin-bottom: 10px;
+      font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+      border-radius: 25px;
+      background-color: #e8f0f0;
+    }
+
+    .review fieldset legend {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 13xxpx;
+      font-weight: bold;
+      padding-bottom: 12px;
+    }
+
 
 /*Product Categories Style Settings*/
   /*Category navigation style settings*/
@@ -168,6 +301,7 @@ hr {
       padding-left: 0px;
       background-color: #ACBDBA;
       text-align: center;
+      border-radius: 10px;
     }
 
     .category li {
@@ -179,11 +313,13 @@ hr {
     
     .category li:hover {
       background-color: #6E62E2;
+      border-radius: 10px;
     }
 
     .category  li a {
       color: #051014;
       text-decoration: none;
+      padding: 10px 200px;
     }
     
     .category li:hover a, .category li a:active,.category li:hover , .category li:active{
@@ -233,6 +369,13 @@ hr {
       color: gray;
       font-size: 22px;
     }
+
+    .pCard p:nth-of-type(4) {
+      color:#6E62E2;
+      font-size: 25px;
+      position: relative;
+    }
+
 
 /*Team Member div style settings*/
   .member {
@@ -308,8 +451,41 @@ hr {
 
   footer ul li{
     display: inline-block;
+    padding-right: 5px;
   }
-  
+
+  footer ul  #fb a:before{
+    content: url(../images/fb.png);
+    zoom: 60%;
+  }
+
+  footer ul  #fb a:hover::before{
+    content: url(../images/fb_v.png);
+    zoom: 60%;
+  }
+
+  footer ul  #insta a:before{
+    content: url(../images/insta.png);
+    zoom: 60%;
+  }
+
+  footer ul  #insta a:hover::before{
+    content: url(../images/insta_v.png);
+    zoom: 60%;
+  }
+
+  footer ul  #twit a:before{
+    content: url(../images/twitter.png);
+    zoom: 60%;
+  }
+
+  footer ul  #twit a:hover::before{
+    content: url(../images/twitter_v.png);
+    zoom: 60%;
+  }
+
+
+  /*
   footer a:link, footer a:visited{
     background-color: #CDDDDD;
     color: #051014;
@@ -324,3 +500,4 @@ hr {
     color: #CDDDDD;
   }
 
+*/
