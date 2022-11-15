@@ -3,26 +3,26 @@
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap');
 
-/*Style settings that affect the whole page*/
+/*Style rules that affect the whole page*/
   html {
     scroll-behavior: smooth; /*Smooth navigation (ex: product-categories.html when choosing a category)*/
   }
 
-/*Main Body Style Settings*/
+/*Main Body Style rules*/
   body {
     background-color: #CDDDDD;
     font-family: 'Roboto', sans-serif;
     color: #051014;
   }
 
-/*Page Title(h1) style settings*/
+/*Page Title(h1) style rules*/
   h1 {
     font-family: 'Advent Pro', sans-serif;
     font-size: 30px;
     margin-bottom: 1px;
   }
 
-/*hr style settings>*/
+/*hr style rules*/
   hr {
     border-bottom: 1px solid #051014;
     margin: 0px;
@@ -30,13 +30,13 @@
     border-radius: 5px;
   }
 
-/*abbr style settings>*/
+/*abbr style rules*/
   abbr{
     text-decoration: none;
   }
 
 
-/*return to previous page link style settings*/
+/*return to previous page link style rules*/
   #return{
     text-decoration: none;
     color: #051014;
@@ -51,9 +51,9 @@
     text-decoration: underline;
   }
 
-/* Website Header style settings*/
+/* Website Header style rules*/
 
-  /* Header Image-Logo settings*/
+  /* Header Image-Logo rules*/
   header img {
       display: block;
       margin-left: auto;
@@ -121,12 +121,12 @@
     height: auto;
   }
 
-/*Product Info Style Settings*/
+/*Product Info Style rules*/
   .details {
     width: auto;
   }
 
-  .details img {
+  .details > img {
     display: block;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -138,17 +138,17 @@
     background-color: #e8f0f0;
   }
 
-  .details #code {
+  .details > p:nth-of-type(1) {
     color: rgb(134, 133, 133);
     font-size: 10px;
   }
 
-  .details #price {
+  .details > p:nth-of-type(3) {
     color: gray;
     font-size: 22px;
   }
 
-  .details h3,h4 {
+  .details h3, .details h4 {
     font-family: 'Advent Pro', sans-serif;
     font-size: 20px;
   }
@@ -172,7 +172,6 @@
     max-width: 100%;
     height: auto;
     padding: 0;
-    background-color:#ACBDBA;
   }
 
 
@@ -212,7 +211,7 @@
     text-decoration: none;
   }
 
-  /*Product Info Style Settings*/
+  /*Product Info Style rules*/
     .review > p:nth-of-type(1) {
       font-size: 20px;
       margin-bottom: 0;
@@ -239,21 +238,21 @@
     }
 
 
-/*Product Categories Style Settings*/
-  /*Category navigation style settings*/
-    #p_nav {
+/*Product Categories Style rules*/
+  /*Category navigation style rules*/
+    #nav-prod {
       margin-top: 20px;
       width: auto ;
     }
 
   
-    #p_nav ul{
+    #nav-prod ul{
       padding-left: 0px;
       text-align: center;
       margin: 0px;
     }
   
-    #p_nav li {
+    #nav-prod li {
       display: inline-block;
       padding-bottom: 5px;
       font-family: 'Ubuntu Mono', monospace;
@@ -262,11 +261,11 @@
       width: 30%;
     }
 
-    #p_nav li a{
+    #nav-prod li a{
       color: #CDDDDD;
     }
 
-    #p_nav a:link, #p_nav a:visited{
+    #nav-prod a:link, #nav-prod a:visited{
     color: #CDDDDD;
     background-color: #051014;
     text-align: center;
@@ -275,11 +274,11 @@
     display: inline-block;
   }
 
-  #p_nav a:hover, #p_nav a:active {
+  #nav-prod a:hover, #nav-prod a:active {
     color: #6E62E2;
   }
 
-  /*category list style settings*/
+  /*category list style rules*/
     .category {
       border-radius: 5px;
       padding-left: 10px;
@@ -331,7 +330,7 @@
       width: 50%;
     }
 
-  /*Product Card Style Settings*/
+  /*Product Card Style rules*/
     .pCard{
       border-radius: 5px;
       padding-left: 10px;
@@ -342,6 +341,7 @@
       max-width: 250px;
       max-height: 530px;
       text-align: center;
+      overflow: auto;
     }
 
     .pCard img {
@@ -377,7 +377,7 @@
     }
 
 
-/*Team Member div style settings*/
+/*Team Member div style rules*/
   .member {
     border-radius: 5px;
     background-color: #e8f0f0;
@@ -439,6 +439,9 @@
   }
 
   footer h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 450;
     margin-bottom: 0px;
   }
 
