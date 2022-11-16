@@ -11,64 +11,67 @@
 		<link rel="stylesheet" href="../css/style.css">
 	</head>
 	<body>
-		<header>
-			<img src="../images/header.png" alt = "Header"> 
-			<nav>
+		<div class="grid">
+			<header>
+				<img src="../images/header.png" alt = "Header"> 
+				<nav>
+					<ul>
+						<li><a href="index.html">Αρχική</a></li>
+						<li><a href="product-categories.html">Προιόντα</a></li>
+						<li><a href="contact-us.html">Επικοινωνία</a></li>
+						<li><a href="about-us.html">Σχετικά Με Εμάς</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<div class="pageCenter">
+						<h1>Φόρμα Επικοινωνίας</h1><hr>
+						<p>Αντιμετωπίσατε κάποιο πρόβλημα σε οποιοδήποτε σημείο της παραγγελίας σας;<br>
+							Συμπληρώστε την παρακάτω φόρμα και θα σας εξυπηρετήσουμε το συντομότερο δυνατό!</p>	
+					<div class="form">
+						<form>
+							<fieldset>
+								<legend>Προσωπικά Στοιχεία</legend>
+								<label for="fname">Όνομα:</label><br>
+								<input type="text" id="fname" name="fname" ><br>
+								<label for="lname">Επώνυμο:</label><br>
+								<input type="text" id="lname" name="lname"><br>
+								<label for="email">E-Mail:</label><br>
+								<input type="email" id="email" name="email"><br>
+								<label for="phone">Τηλέφωνο Επικοινωνίας:</label><br>
+								<input type="tel" name="phone" id="phone"><br>
+							</fieldset> <br>
+							<fieldset>
+								<legend>Στοιχεία Παραγγελίας</legend>
+								<label for="code">Κωδικός Προϊόντος:</label><br>
+								<input type="text" name="code" id="code"><br>
+								<label for="date">Ημερομηνία Αγοράς:</label><br>
+								<input type="date" name="date" id="date"><br>
+								<label for="receipt">Απόδειξη Αγοράς:</label><br>
+								<input type="file" name="receipt" id="receipt" ><br>
+							</fieldset> <br>
+							<label for="comment">Περιγράψτε το πρόβλημά σας:</label><br>
+							<textarea name="comment" id="comment" rows="8" cols="72"></textarea><br>
+							<input type="submit" value="Υποβολή">
+						</form>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<h4>Στοιχεία Επικοινωνίας</h4>
+				<address>
+					<ul>
+						<li>p3180126@aueb.gr</li>
+						<li>p3150105@aueb.gr</li>
+					</ul>
+				</address>
 				<ul>
-					<li><a href="index.html">Αρχική</a></li>
-					<li><a href="product-categories.html">Προιόντα</a></li>
-					<li><a href="contact-us.html">Επικοινωνία</a></li>
-					<li><a href="about-us.html">Σχετικά Με Εμάς</a></li>
+					<li id="fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+					<li id="insta"><a href="https://www.instagram.com/?hl=en" target="_blank"></a></li>
+					<li id="twit"><a href="https://twitter.com/?lang=en" target="_blank"></a></li>
 				</ul>
-			</nav>
-		</header>
-		
-		<div class="pageCenter">
-				<h1>Φόρμα Επικοινωνίας</h1><hr>
-				<p>Αντιμετωπίσατε κάποιο πρόβλημα σε οποιοδήποτε σημείο της παραγγελίας σας;<br>
-					Συμπληρώστε την παρακάτω φόρμα και θα σας εξυπηρετήσουμε το συντομότερο δυνατό!</p>	
-			<div class="form">
-				<form>
-					<fieldset>
-						<legend>Προσωπικά Στοιχεία</legend>
-						<label for="fname">Όνομα:</label><br>
-						<input type="text" id="fname" name="fname" ><br>
-						<label for="lname">Επώνυμο:</label><br>
-						<input type="text" id="lname" name="lname"><br>
-						<label for="email">E-Mail:</label><br>
-						<input type="email" id="email" name="email"><br>
-						<label for="phone">Τηλέφωνο Επικοινωνίας:</label><br>
-						<input type="tel" name="phone" id="phone"><br>
-					</fieldset> <br>
-					<fieldset>
-						<legend>Στοιχεία Παραγγελίας</legend>
-						<label for="code">Κωδικός Προϊόντος:</label><br>
-						<input type="text" name="code" id="code"><br>
-						<label for="date">Ημερομηνία Αγοράς:</label><br>
-						<input type="date" name="date" id="date"><br>
-						<label for="receipt">Απόδειξη Αγοράς:</label><br>
-						<input type="file" name="receipt" id="receipt" ><br>
-					</fieldset> <br>
-					<label for="comment">Περιγράψτε το πρόβλημά σας:</label><br>
-					<textarea name="comment" id="comment" rows="8" cols="72"></textarea><br>
-					<input type="submit" value="Υποβολή">
-				</form>
-			</div>
+				<p>©e-Mart 2021-2022</p>
+			</footer>
 		</div>
-		<footer>
-			<h4>Στοιχεία Επικοινωνίας</h4>
-			<address>
-				<ul>
-					<li>p3180126@aueb.gr</li>
-					<li>p3150105@aueb.gr</li>
-				</ul>
-			</address>
-			<ul>
-				<li id="fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
-				<li id="insta"><a href="https://www.instagram.com/?hl=en" target="_blank"></a></li>
-				<li id="twit"><a href="https://twitter.com/?lang=en" target="_blank"></a></li>
-			</ul>
-			<p>©e-Mart 2021-2022</p>
-		</footer>
 	</body>
 </html>
