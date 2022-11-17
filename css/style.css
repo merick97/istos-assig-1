@@ -1,7 +1,16 @@
 /*Importng custom fonts*/
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap');
+  @font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+  } 
+  @font-face {
+    font-family: Ubuntu Mono;
+    src: url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+  } 
+  @font-face {
+    font-family: Advent Pro;
+    src: url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap');
+  }
 
 /*Style rules that affect the whole page*/
   html {
@@ -18,7 +27,9 @@
 /*Page Title(h1) style rules*/
   h1 {    /*changes font, font size and the spacing for the main tiles (h1)*/
     font-family: 'Advent Pro', sans-serif;
+    border-bottom: #051014 solid 2px;
     font-size: 30px;
+    margin-top: 0px;
     margin-bottom: 1px;
   }
 
@@ -52,18 +63,19 @@
   }
 
 /*Grid Container*/
-.grid {   /*creates a grid for the whole page*/
-  display: grid;
-  grid-template-columns: 1fr;  /*1 column*/
-  grid-template-rows: auto 1fr auto;  /*2 rows*/
-  grid-column-gap: 0px; /*no gap between columns*/
-  grid-row-gap: 0px;  /*no gap between rows*/
-  padding: 0px; /*spacing (sets padding to 0)*/
+  .grid {   /*creates a grid for the whole page*/
+    display: grid;
+    grid-template-columns: 1fr;  /*1 column*/
+    grid-template-rows: auto 1fr auto;  /*2 rows*/
+    grid-column-gap: 0px; /*no gap between columns*/
+    grid-row-gap: 0px;  /*no gap between rows*/
+    padding: 0px; /*spacing (sets padding to 0)*/
   }
 
   /*Page's main content*/
   main {
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 2 / 1 / 3 / 3;   /**/
+    margin: auto;
   }
 
 /* Website Header style rules*/
@@ -86,16 +98,20 @@
 
     header nav {  /*lets the browser calculate the width of the navigation bar*/
       width: auto ;
+      margin-bottom: 0px;
     }
 
-    header nav ul{    /*sapcing, changes the color of the bar and centers the text*/
+    header nav ul{    /*sapcing, changes the color of the bar and centers the text in a row using flexbox*/
       padding-left: 0px;
       background-color: #ACBDBA;
       text-align: center;
+      display: flex;
+      flex-flow: row nowrap;    /*displays list items in a row without wraping them when the window size changes*/
+      justify-content: center;  /*centers the list items*/
+      list-style: none;
     }
 
     header nav li {   /*displays list itmes inline(side by side), spacing and font change*/
-      display: inline-block;
       padding: 10px 20px;
       font-family: 'Ubuntu Mono', monospace;
     }
@@ -119,26 +135,45 @@
     max-width: 600px;
     margin: auto;
   }
+/*Creates a grid for the main content of the index page*/
+  .index-grid{
+    display: grid;
+    grid-template-columns: 1fr;  /*1 column*/
+    grid-template-rows: auto 1fr 1fr;  /*2 rows*/
+    grid-column-gap: 0px; /*no gap between columns*/
+    grid-row-gap: 0px;  /*no gap between rows*/
+    padding: 0px; /*spacing (sets padding to 0)*/
+  }
+
+  .index-grid div[class=center]:nth-of-type(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .index-grid div[class=center]:nth-of-type(2) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .index-grid div[class=center]:nth-of-type(3) {
+    grid-area: 3 / 1 / 4 / 2;
+  }
 
 /*Centers*/
   .center {   /*centers text and elements*/
-    text-align: center;
     padding-top: 5px;
-  }
-
-  .center div{    /*centers div sections inline with eachother*/
-    display:inline-block;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-flow: row wrap;    /*displays list items in a row and wraping them when the window size changes*/
+    justify-content: center;
   }
-
   .center img {  /* Centers a single image or group of images inline with eachother*/
-    display:inline-block;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
     height: auto;
   }
+
+
 
 /*Product Info Style rules*/
   .details > img {    /*spacing and backround color declarations for images where the parent has the .details class */
@@ -227,6 +262,10 @@
   }
 
   /*Product Info Style rules*/
+    .review h3 {
+      border-bottom: 1px solid #051014;
+    }
+
     .review > p:nth-of-type(1) {    /*changes font size and the spacing for the first p element where the parent has the .review class*/
       font-size: 20px;
       margin-bottom: 0;
@@ -254,10 +293,48 @@
 
 
 /*Product Categories Style rules*/
+    /*Product Categories Grid*/
+      .main div[class=category-grid]{
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+      }
+      .category-grid {
+        display: grid;
+        grid-template-columns: 1fr;  /*1 column*/
+        grid-template-rows: 2% 6% 1fr;  /*2 rows*/
+        grid-column-gap: 0px; /*no gap between columns*/
+        grid-row-gap: 0px;  /*no gap between rows*/
+        padding: 0px; /*spacing (sets padding to 0)*/
+      }
+
+      .category-grid h1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .category-grid nav {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+
+      .category-grid div[class=category-flex]{
+        grid-area: 3 / 1 / 4 / 2;
+      }
+
+  /*Product Categorie Flexbox*/
+      .category-flex{
+        margin-top: 7px;
+        display: flex;
+        flex-flow: column nowrap;    /*displays list items in a row and wraping them when the window size changes*/
+        justify-content:center;    /*centers the list items*/
+        align-content: space-between;
+      }
+
+      
   /*Category navigation style rules*/
     #nav-prod {   /*spacing, lets the browser calculate the width of the navigation bar*/
       margin-top: 20px;
       width: auto ;
+      margin-top: 7px;
     }
 
   
@@ -300,10 +377,9 @@
       padding-left: 10px;   /*spacing*/
       padding-right: 10px;
       padding-bottom: 5px;
-      margin: auto;
-      max-width: 600px;
       background-color: #e8f0f0;  /*bakcround color change*/
       text-align: center;   /*alings text to the center*/
+      margin-bottom: 10px;
     }
 
     .category h3 {    /*spacing, changes font size and weight for h3 tag*/
@@ -344,6 +420,8 @@
 
     .category img {   /*sets image size to the 50% of the original*/
       width: 50%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
   /*Product Card Style rules*/
@@ -403,7 +481,8 @@
     border-radius: 5px;   /*rounds the corners of the box*/
     background-color: #e8f0f0;    /*changes backround color of the box*/
     max-width: 300px;   /*sets max width of th box*/
-    margin: auto;   /*Spacing*/
+    margin-right: 5px;   /*Spacing*/
+    margin-left: 5px;
     text-align: center;   /*alings text and elements to the center*/
     font-family: arial;   /*changes font*/
   }
@@ -453,7 +532,7 @@
 /* Footer */
   footer {    /*creates the footer area*/
     text-align: center;   /*aligns text and elemnts to the center*/
-    margin-top: 10px;   /*spacing*/
+    margin-top: 25px;   /*spacing*/
     padding-top: 3px;
     padding-bottom: 10px;
     background-color: #2E2F2F;    /*changes backround color*/
