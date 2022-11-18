@@ -1,15 +1,15 @@
 /*Importng custom fonts*/
   @font-face {
     font-family: Roboto;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+    src: url('../fonts/Roboto-Regular.ttf');
   } 
   @font-face {
     font-family: Ubuntu Mono;
-    src: url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+    src: url('../fonts/UbuntuMono-Regular.ttf');
   } 
   @font-face {
     font-family: Advent Pro;
-    src: url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap');
+    src: url('../fonts/AdventPro-Regular.ttf');
   }
 
 /*Style rules that affect the whole page*/
@@ -22,6 +22,7 @@
     background-color: #CDDDDD;
     font-family: 'Roboto', sans-serif;
     color: #051014;
+    margin: 0px;
   }
 
 /*Page Title(h1) style rules*/
@@ -106,7 +107,7 @@
       background-color: #ACBDBA;
       text-align: center;
       display: flex;
-      flex-flow: row nowrap;    /*displays list items in a row without wraping them when the window size changes*/
+      flex-flow: row wrap;    /*displays list items in a row without wraping them when the window size changes*/
       justify-content: center;  /*centers the list items*/
       list-style: none;
     }
@@ -158,13 +159,13 @@
   }
 
 /*Centers*/
-  .center {   /*centers text and elements*/
+  .center {   /*centers text and elements using flexbox*/
     padding-top: 5px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    flex-flow: row wrap;    /*displays list items in a row and wraping them when the window size changes*/
-    justify-content: center;
+    flex-flow: row wrap;    /*displays items in a row and wraping them when the window size changes*/
+    justify-content: center;    /*centers items*/
   }
   .center img {  /* Centers a single image or group of images inline with eachother*/
     margin-left: auto;
@@ -294,11 +295,6 @@
 
 /*Product Categories Style rules*/
     /*Product Categories Grid*/
-      .main div[class=category-grid]{
-          margin-left: auto;
-          margin-right: auto;
-          width: 100%;
-      }
       .category-grid {
         display: grid;
         grid-template-columns: 1fr;  /*1 column*/
@@ -322,7 +318,7 @@
 
   /*Product Categorie Flexbox*/
       .category-flex{
-        margin-top: 7px;
+        margin-top: 0px;
         display: flex;
         flex-flow: column nowrap;    /*displays list items in a row and wraping them when the window size changes*/
         justify-content:center;    /*centers the list items*/
@@ -430,13 +426,16 @@
       border-radius: 5px;   /*rounds the corners of the box*/
       padding-left: 10px;   /*spacing*/
       padding-right: 10px;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
       margin: 5px;
       background-color: #e8f0f0;    /*changes backround color of the box*/
       max-width: 250px;   /*max widht and height for the box*/
       max-height: 530px;
       text-align: center;   /*centers text and elemnts to the center*/
       overflow: auto;   /*adds a scrollbar to the box in case of elements overflowing outside the box*/
+      display: flex;
+      flex-flow: column nowrap;    /*displays list items in a row and wraping them when the window size changes*/
+      justify-content:center;    /*centers the list items*/
     }
 
     .pCard img {    /*spacing, sets image size to the 50% of the original*/
@@ -449,13 +448,18 @@
       background-color: #051014;
       text-decoration: none;
       padding: 10px;
+      margin: 5px;
     }
     
     .pCard a:hover {    /*changes font color of links while hovering*/
       color:#6E62E2;
     }
 
-    /*Product category*/
+    .pCard p{
+      margin: 5px;
+    }
+
+    /*Product code*/
     .pCard p:nth-of-type(1) {   /*changes font color and size for the first p element inside a section with the .pCard class*/
       color: rgb(134, 133, 133);
       font-size: 10px;
