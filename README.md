@@ -1,9 +1,6 @@
-Exercise 3
+Exercise 4
 
 Stuff to add:
 -remove fonts from ex2
-(done)-download and setup fonts
--grids
--flexboxes
 -Accesible Links?
 

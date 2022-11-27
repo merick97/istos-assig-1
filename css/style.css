@@ -491,7 +491,7 @@
     font-family: arial;   /*changes font*/
   }
 
-  .member p {   /*changes font color and size of the p tag*/
+  .member p {   /*changes font color and size of the p tag */
     color: grey;
     font-size: 18px;
   } 
