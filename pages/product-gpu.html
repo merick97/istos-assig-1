@@ -12,9 +12,13 @@
 		<link rel="stylesheet" href="../css/style.css">
 	</head>
 	<body>
-		<div class="grif">
+		<div class="grid">
 			<header>
-				<img src="../images/header.png" alt = "Header"> 
+				<picture>
+					<source media="(max-width: 600px)" srcset="../images/header_small.png">
+					<source media="(min-width: 2200px)" srcset="../images/header_mid.png">
+					<img src="../images/header.png" alt = "Header"> 
+				</picture>				
 				<nav>
 					<ul>
 						<li><a href="index.html">Αρχική</a></li>

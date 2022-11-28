@@ -90,7 +90,6 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 124.5px;
         max-width: 100%;
         height: auto;
     }
@@ -181,14 +180,17 @@
     max-width: 100%;
     height: auto;
   }
-
-
-
+    /*Media querie to make products display in a column instead of a row*/
+    @media screen and (max-width: 600px) {
+      .center{
+        flex-flow: column wrap;
+      }
+    }
 /*Product Info Style rules*/
   .details > img {    /*spacing and backround color declarations for images where the parent has the .details class */
     display: block;
     margin: 10px auto 5px auto;
-    padding: 5px 100px 5px 100px;
+    padding: 5px 90px 5px 90px;
     border-radius: 25px;
     width: 50%;   /*changes size to 50% of the original*/
     background-color: #e8f0f0;
