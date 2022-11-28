@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="el">
+	<head>
+		<title> e-Mart | Εγγραφή Χρήστη </title>
+		<meta charset = UTF-8>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Computers, Laptops,Peripherals, Technology">			
+		<meta name="description" content="Οι καλύτερες τιμές σε υπολογιστές, hardware, λάπτοπ, αναλώσιμα, περιφερειακά 
+		και αλλα.Άμεση αποστολή σε όλη τη Ελλάδα.">		
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="grid">
+			<header>
+				<img src="../images/header.png" alt = "Header"> 
+				<nav>
+					<ul>
+						<li><a href="index.html">Αρχική</a></li>
+						<li><a href="product-categories.html">Προιόντα</a></li>
+						<li><a href="contact-us.html">Επικοινωνία</a></li>
+						<li><a href="about-us.html">Σχετικά Με Εμάς</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<div class="pageCenter">
+					<div class="form">
+						<form action="">
+							<fieldset>
+								<legend>Στοιχεία Ταυτοποίησης</legend>
+								<label for="user">Όνομα Χρήστη</label>
+								<input type="text" id="user" name="user">
+								<label for="pass">Κωδικός Χρήστη</label>
+								<input type="password" name="pass" id="pass">
+								<label for="vpass">Επαλήθευση Κωδικού Χρήστη</label>
+								<input type="password" name="vpass" id="vpass">
+							</fieldset>
+							<fieldset>
+								<legend>Προσωπικά Στοιχεία</legend>
+								<label for="fname">Όνομα:</label>
+								<input type="text" id="fname" name="fname" >
+								<label for="lname">Επώνυμο:</label>
+								<input type="text" id="lname" name="lname">
+								<label for="email">E-Mail:</label>
+								<input type="email" id="email" name="email" placeholder="example@example">
+								<label for="phone">Τηλέφωνο Επικοινωνίας:</label>
+								<input type="tel" name="phone" id="phone" placeholder="69xxxxxxxx">
+                                <label for="bdate">Ημερομηνία Γέννησης</label>
+                                <input type="date" name="bdate" id="bdate" placeholder="ηη/μμ/εεεε">
+                                <fieldset>
+                                    <legend>Διεύθυνση Κατοικίας</legend>
+									<label for="city">Πόλη</label>
+									<input type="text" id="city" name="city" placeholder="Αθήνα">
+									<label for="address">Διεύθυνση</label>
+									<input type="text" id="address" name="address" placeholder="28ης Οκτωβρίου 76">
+									<label for="zip">Ταχυδρομικός Κώδικας</label>
+									<input type="text" id="zip" name="zip" placeholder="104 34">
+
+                                </fieldset>
+							</fieldset> <br>
+							<fieldset>
+								<p>Διαλέξτε τρόπο επικοινωνίας για ενημερώσεις σχετικές με τις παραγγελίες σας</p>
+								<input type="radio" name="comm" id="sms">
+								<label for="sms">SMS</label>
+								<input type="radio" name="comm" id="mail">
+								<label for="mail">E-Mail</label>
+								<input type="radio" name="comm" id="viber">
+								<label for="viber">Viber</label>
+								<input type="radio" name="comm" id="whatsapp">
+								<label for="whatsapp">WhatsApp</label>
+							</fieldset> <br>
+							<label for="comment">Περιγράψτε το πρόβλημά σας:</label>
+							<textarea name="comment" id="comment" rows="8" cols="72"></textarea>
+							<input type="submit" value="Υποβολή">
+						</form>
+					</div>
+				</div>
+			</main>
+			<footer>
+				<h4>Στοιχεία Επικοινωνίας</h4>
+				<address>
+					<ul>
+						<li>p3180126@aueb.gr</li>
+						<li>p3150105@aueb.gr</li>
+					</ul>
+				</address>
+				<ul>
+					<li id="fb"><a href="https://www.facebook.com/" target="_blank"></a></li>
+					<li id="insta"><a href="https://www.instagram.com/?hl=en" target="_blank"></a></li>
+					<li id="twit"><a href="https://twitter.com/?lang=en" target="_blank"></a></li>
+				</ul>
+				<p>©e-Mart 2021-2022</p>
+			</footer>
+		</div>
+	</body>
+</html>
