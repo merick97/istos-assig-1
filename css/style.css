@@ -314,7 +314,7 @@
     .category  li a {   /*spacing, changes font color and removes underline for links*/
       color: #051014;
       text-decoration: none;
-      padding: 10px 200px;
+      padding: 10px 20px;
     }
     
     .category li:hover a,.category li:hover{   /*changes backround and font color while hovering over list itmes and links*/
