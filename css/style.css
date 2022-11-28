@@ -526,7 +526,16 @@
     padding: 20px;    /*spacing*/
   }
 
-  .form input:not([type=submit]):not([type="radio"]),.form textarea {   /*Style rules for textarea tag and all the inputs except the submit button */
+  .form label{
+    margin-bottom: 5px;
+  }
+
+  .form p{
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  .form input:not([type=submit]):not([type="radio"]),.form textarea, .form select {   /*Style rules for textarea tag and all the inputs except the submit button */
     width: 100%;    /*extends the width to the max of the form box*/
     padding: 10px 20px;   /*spacing*/
     margin: 8px 0;

@@ -70,8 +70,44 @@
 								<input type="radio" name="comm" id="whatsapp">
 								<label for="whatsapp">WhatsApp</label>
 							</fieldset> <br>
-							<label for="comment">Περιγράψτε το πρόβλημά σας:</label>
-							<textarea name="comment" id="comment" rows="8" cols="72"></textarea>
+							<fieldset>
+								<legend>Ερωτηματολόγιο</legend>
+								<p>Είστε ο κύριος υπεύθυνος για τις αγορές στο σπίτι σας;</p>
+								<input type="radio" name="main" id="y">
+								<label for="y">Ναι</label> <br>
+								<input type="radio" name="main" id="n">
+								<label for="n">Όχι</label> <br>
+								<label for="web">Πόσο συχνά κάνετε αγορές μέσω διαδικτύου; <br> (Καθόλου συχνά = 0, Πολύ συχνά = 100)</label> <br>
+								<input type="range" name="web" id="web" min="0" max="100" list="label">
+								<datalist id="label">
+									<option value="0"></option>
+									<option value="50"></option>
+									<option value="100"></option>
+								</datalist>
+								<p>Πότε ήταν η τελευταία φορά που κάνατε ηλεκτρονική αγορά</p>
+								<input type="radio" name="time" id="1m">
+								<label for="1m">Τον τελευταίο μήνα</label> <br>
+								<input type="radio" name="time" id="3m">
+								<label for="3m">Τους τελευταίους 3 μήνες</label> <br>
+								<input type="radio" name="time" id="1y">
+								<label for="1y">Τον τελευταίο χρόνο</label> <br>
+								<input type="radio" name="time" id="more">
+								<label for="more">Περισσότερο από 1 χρόνο</label> <br>
+								<br>
+								<label for="payment">Πώς επιλέγεται να ολοκληρώνετε συνήθως τις ηλεκτρονικές σας αγορές;</label><br>
+								<select id="payment" name="payment">
+									<option value="cash">Αντικαταβολή</option>
+									<option value="card">Πιστωτική\Χρεωστική Κάρτα</option>
+									<option value="paypal">PayPal</option>
+								</select> <br>
+								<label for="categories">Τι είδους προιόντα αγοράζετε συνήθως στο διαδίκτυο;</label>
+								<select name="categories" id="categories">
+									<option value="pc">Υπολογιστές</option>
+									<option value="tv">Τηλεοράσεις</option>
+									<option value="white">Οικιακές Συσκευές</option>
+									<option value="phones">Κινητά Τηλέφωνα</option>
+								</select>
+							</fieldset> <br>
 							<input type="submit" value="Υποβολή">
 						</form>
 					</div>
