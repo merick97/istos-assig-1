@@ -107,7 +107,7 @@
       background-color: #ACBDBA;
       text-align: center;
       display: flex;
-      flex-flow: row wrap;    /*displays list items in a row without wraping them when the window size changes*/
+      flex-flow: row nowrap;    /*displays list items in a row without wraping them when the window size changes*/
       justify-content: center;  /*centers the list items*/
       list-style: none;
     }
@@ -130,6 +130,14 @@
     header nav  li:hover a {    /*chaneges the font color of the links while hovering*/
       color: #ACBDBA;
     }
+
+    /*Media querie to make menu display in a column instead of a row*/
+    @media screen and (max-width: 600px) {
+      header nav ul{
+        flex-flow: column nowrap;
+      }
+    }
+
 
 /*Center Page*/
   .pageCenter {   /*centers a div on the center of the page. Used to center all the pages)*/
@@ -298,10 +306,11 @@
       .category-grid {
         display: grid;
         grid-template-columns: 1fr;  /*1 column*/
-        grid-template-rows: 2% 6% 1fr;  /*2 rows*/
+        grid-template-rows: 2% 1fr max-content;  /*2 rows*/
         grid-column-gap: 0px; /*no gap between columns*/
         grid-row-gap: 0px;  /*no gap between rows*/
         padding: 0px; /*spacing (sets padding to 0)*/
+        max-width: 600px;
       }
 
       .category-grid h1 {   /*First row of the category grid (.category-grid)*/
@@ -364,6 +373,16 @@
 
   #nav-prod a:hover {   /*changes font color while hovering*/
     color: #6E62E2;
+  }
+
+  @media screen and (max-width: 600px) {
+    #nav-prod ul{
+      text-align: center;
+    }
+    #nav-prod li{
+      width: auto;
+      display: block;
+    }
   }
 
   /*category list style rules*/
@@ -491,7 +510,7 @@
     font-family: arial;   /*changes font*/
   }
 
-  .member p {   /*changes font color and size of the p tag */
+  .member p {   /*changes font color and size of the p tag*/
     color: grey;
     font-size: 18px;
   } 
