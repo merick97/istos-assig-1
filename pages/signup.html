@@ -13,86 +13,220 @@
 	<body>
 		<div class="grid">
 			<header>
-				<img src="../images/header.png" alt = "Header"> 
+				<picture>
+					<source media="(max-width: 600px)" srcset="../images/header_small.png">
+					<source media="(min-width: 2200px)" srcset="../images/header_mid.png">
+					<img src="../images/header.png" alt = "Header"> 
+				</picture>				
 				<nav>
 					<ul>
 						<li><a href="index.html">Αρχική</a></li>
 						<li><a href="product-categories.html">Προιόντα</a></li>
 						<li><a href="contact-us.html">Επικοινωνία</a></li>
 						<li><a href="about-us.html">Σχετικά Με Εμάς</a></li>
+						<li><a href="signup.html">Εγγραφή</a></li>
 					</ul>
 				</nav>
 			</header>
 			<main>
 				<div class="pageCenter">
 					<div class="form">
-						<form action="">
+						<form action="" autocomplete="off">
 							<fieldset>
 								<legend>Στοιχεία Ταυτοποίησης</legend>
 								<label for="user">Όνομα Χρήστη</label>
-								<input type="text" id="user" name="user">
+								<input type="text" id="user" name="user" required>
 								<label for="pass">Κωδικός Χρήστη</label>
-								<input type="password" name="pass" id="pass">
+								<input type="password" name="pass" id="pass" required>
 								<label for="vpass">Επαλήθευση Κωδικού Χρήστη</label>
-								<input type="password" name="vpass" id="vpass">
+								<input type="password" name="vpass" id="vpass" required>
 							</fieldset>
 							<fieldset>
 								<legend>Προσωπικά Στοιχεία</legend>
 								<label for="fname">Όνομα:</label>
-								<input type="text" id="fname" name="fname" >
+								<input type="text" id="fname" name="fname" autocomplete="on">
 								<label for="lname">Επώνυμο:</label>
-								<input type="text" id="lname" name="lname">
+								<input type="text" id="lname" name="lname"  autocomplete="on">
 								<label for="email">E-Mail:</label>
-								<input type="email" id="email" name="email" placeholder="example@example">
+								<input type="email" id="email" name="email" placeholder="example@example" required>
 								<label for="phone">Τηλέφωνο Επικοινωνίας:</label>
-								<input type="tel" name="phone" id="phone" placeholder="69xxxxxxxx">
+								<input type="tel" name="phone" id="phone" placeholder="69xxxxxxxx" required>
                                 <label for="bdate">Ημερομηνία Γέννησης</label>
-                                <input type="date" name="bdate" id="bdate" placeholder="ηη/μμ/εεεε">
+                                <input type="date" name="bdate" id="bdate" placeholder="ηη/μμ/εεεε" required>
                                 <fieldset>
                                     <legend>Διεύθυνση Κατοικίας</legend>
 									<label for="city">Πόλη</label>
-									<input type="text" id="city" name="city" placeholder="Αθήνα">
+									<input type="text" id="city" name="city" placeholder="Αθήνα" required  autocomplete="on" list="cities">
+									<datalist id="cities">
+										<option>Αθήνα</option>
+										<option>Θεσσαλονίκη</option>
+										<option>Πάτρα</option>
+										<option>Ηράκλειο</option>
+										<option>Λάρισα</option>
+										<option>Βόλος</option>
+										<option>Ιωάννινα</option>
+										<option>Τρίκαλα</option>
+										<option>Χαλκίδα</option>
+										<option>Σέρρες</option>
+										<option>Αλεξανδρούπολη</option>
+										<option>Ξάνθη</option>
+										<option>Κατερίνη</option>
+										<option>Αγρίνιο</option>
+										<option>Καλαμάτα</option>
+										<option>Καβάλα</option>
+										<option>Χανιά</option>
+										<option>Λαμία</option>
+										<option>Κομοτηνή</option>
+										<option>Ρόδος</option>
+										<option>Δράμα</option>
+										<option>Βέροια</option>
+										<option>Κοζάνη</option>
+										<option>Καρδίτσα</option>
+										<option>Ρέθυμνο</option>
+										<option>Πτολεμαΐδα</option>
+										<option>Τρίπολη</option>
+										<option>Κόρινθος</option>
+										<option>Γέρακας</option>
+										<option>Γιαννιτσά</option>
+										<option>Μυτιλήνη</option>
+										<option>Χίος</option>
+										<option>Σαλαμίνα</option>
+										<option>Ελευσίνα</option>
+										<option>Κέρκυρα</option>
+										<option>Πύργος</option>
+										<option>Μέγαρα</option>
+										<option>Κιλκίς</option>
+										<option>Θήβα</option>
+										<option>Άργος</option>
+										<option>Άρτα</option>
+										<option>Άρτεμη (Λούτσα)</option>
+										<option>Λιβαδειά</option>
+										<option>Ωραιόκαστρο</option>
+										<option>Αίγιο</option>
+										<option>Κως</option>
+										<option>Κορωπί</option>
+										<option>Πρέβεζα</option>
+										<option>Σπάρτη</option>
+										<option>Νάουσα</option>
+										<option>Ορεστιάδα</option>
+										<option>Περαία</option>
+										<option>Έδεσσα</option>
+										<option>Φλώρινα</option>
+										<option>Αμαλιάδα</option>
+										<option>Παλλήνη</option>
+										<option>Θέρμη</option>
+										<option>Βάρη</option>
+										<option>Νέα Μάκρη</option>
+										<option>Αλεξάνδρεια</option>
+										<option>Παιανία</option>
+										<option>Καλύβια Θορικού</option>
+										<option>Ναύπλιο</option>
+										<option>Ναύπακτος</option>
+										<option>Καστοριά</option>
+										<option>Γρεβενά</option>
+										<option>Μεσολόγγι</option>
+										<option>Γάζι</option>
+										<option>Ιεράπετρα</option>
+										<option>Κάλυμνος (Πόθια)</option>
+										<option>Ραφήνα</option>
+										<option>Λουτράκι</option>
+										<option>Άγιος Νικόλαος</option>
+										<option>Ερμούπολη</option>
+										<option>Ιαλυσός</option>
+										<option>Μάνδρα</option>
+										<option>Τύρναβος</option>
+										<option>Γλυκά Νερά</option>										
+									</datalist>
 									<label for="address">Διεύθυνση</label>
-									<input type="text" id="address" name="address" placeholder="28ης Οκτωβρίου 76">
+									<input type="text" id="address" name="address" placeholder="28ης Οκτωβρίου 76" required  autocomplete="on">
 									<label for="zip">Ταχυδρομικός Κώδικας</label>
-									<input type="text" id="zip" name="zip" placeholder="104 34">
-
+									<input type="text" id="zip" name="zip" placeholder="104 34" required  autocomplete="on">
                                 </fieldset>
 							</fieldset> <br>
 							<fieldset>
-								<p>Διαλέξτε τρόπο επικοινωνίας για ενημερώσεις σχετικές με τις παραγγελίες σας</p>
-								<input type="radio" name="comm" id="sms">
-								<label for="sms">SMS</label>
-								<input type="radio" name="comm" id="mail">
-								<label for="mail">E-Mail</label>
-								<input type="radio" name="comm" id="viber">
-								<label for="viber">Viber</label>
-								<input type="radio" name="comm" id="whatsapp">
-								<label for="whatsapp">WhatsApp</label>
+								<legend>Στοιχεία πληρωμής και αποστολής προιόντων</legend>
+								<div class="payment">
+									<div class="radios">
+										<p>Επιλέξτε τρόπο πληρωμής</p>
+										<input type="radio" name="payment" id="card"  required>
+										<label for="card">Πιστωτική\Χρεωστική Κάρτα</label>
+										<input type="radio" name="payment" id="Paypal">
+										<label for="Paypal">PayPal</label>
+										<input type="radio" name="payment" id="cash">
+										<label for="cash">Αντικαταβολή</label>
+										<div class="card">
+											<label for="card_num">Αριθμός Κάρτας</label>
+											<input type="text" name="pay" id="card_num">
+											<label for="card_date">Ημ/νια λήξης</label>
+											<input type="month" name="pay" id="card_date">
+											<label for="card_cvv">Κωδικός Ασφαλείας</label>
+											<input type="text" name="pay" id="card_cvv" maxlength="3">
+										</div>
+										<div class="paypal">
+											<label for="payid">PayPal ID</label>
+											<input type="text" name="pay" id="payid">
+										</div>
+									</div>
+									<div class="radios">
+										<p>Διεύθυνση αποστολής ίδια με διεύθυνση κατοικίας;</p>
+										<input type="radio" name="main" id="ayes" required>
+										<label for="ayes">Ναι</label> <br>
+										<input type="radio" name="main" id="ano">
+										<label for="anon">Όχι</label> <br>
+										<fieldset class="new_address">
+											<legend>Διεύθυνση αποστολής</legend>
+											<label for="scity">Πόλη</label>
+											<input type="text" id="scity" name="scity" placeholder="Αθήνα" required autocomplete="on" list="cities">
+											<label for="saddress">Διεύθυνση</label>
+											<input type="text" id="saddress" name="saddress" placeholder="28ης Οκτωβρίου 76" required>
+											<label for="szip">Ταχυδρομικός Κώδικας</label>
+											<input type="text" id="szip" name="szip" placeholder="104 34" required>
+										</fieldset>
+									</div>
+								</div>
 							</fieldset> <br>
 							<fieldset>
+								<div class="radios">
+									<p>Διαλέξτε τρόπο επικοινωνίας για ενημερώσεις σχετικές με τις παραγγελίες σας</p>
+									<input type="radio" name="comm" id="sms"  required>
+									<label for="sms">SMS</label>
+									<input type="radio" name="comm" id="mail">
+									<label for="mail">E-Mail</label>
+									<input type="radio" name="comm" id="viber">
+									<label for="viber">Viber</label>
+									<input type="radio" name="comm" id="whatsapp">
+									<label for="whatsapp">WhatsApp</label>
+								</div>
+							</fieldset> <br>
+							<fieldset class="survey">
 								<legend>Ερωτηματολόγιο</legend>
-								<p>Είστε ο κύριος υπεύθυνος για τις αγορές στο σπίτι σας;</p>
-								<input type="radio" name="main" id="y">
-								<label for="y">Ναι</label> <br>
-								<input type="radio" name="main" id="n">
-								<label for="n">Όχι</label> <br>
-								<label for="web">Πόσο συχνά κάνετε αγορές μέσω διαδικτύου; <br> (Καθόλου συχνά = 0, Πολύ συχνά = 100)</label> <br>
-								<input type="range" name="web" id="web" min="0" max="100" list="label">
+								<div class="radios">
+									<p>Είστε ο κύριος υπεύθυνος για τις αγορές στο σπίτι σας;</p>
+									<input type="radio" name="main" id="y" required>
+									<label for="y">Ναι</label> <br>
+									<input type="radio" name="main" id="n">
+									<label for="n">Όχι</label> <br>
+								</div>
+								<div class="radios">
+									<p>Πόσο συχνά κάνετε αγορές μέσω διαδικτύου; <br> (Καθόλου συχνά = 0, Πολύ συχνά = 100)</p> <br>
+									<input type="range" name="web" id="web" min="0" max="100" list="label">
+								</div>
 								<datalist id="label">
 									<option value="0"></option>
 									<option value="50"></option>
 									<option value="100"></option>
 								</datalist>
-								<p>Πότε ήταν η τελευταία φορά που κάνατε ηλεκτρονική αγορά</p>
-								<input type="radio" name="time" id="1m">
-								<label for="1m">Τον τελευταίο μήνα</label> <br>
-								<input type="radio" name="time" id="3m">
-								<label for="3m">Τους τελευταίους 3 μήνες</label> <br>
-								<input type="radio" name="time" id="1y">
-								<label for="1y">Τον τελευταίο χρόνο</label> <br>
-								<input type="radio" name="time" id="more">
-								<label for="more">Περισσότερο από 1 χρόνο</label> <br>
+								<div class="radios">
+									<p>Πότε ήταν η τελευταία φορά που κάνατε ηλεκτρονική αγορά</p>
+									<input type="radio" name="time" id="1m">
+									<label for="1m">Τον τελευταίο μήνα</label> <br>
+									<input type="radio" name="time" id="3m">
+									<label for="3m">Τους τελευταίους 3 μήνες</label> <br>
+									<input type="radio" name="time" id="1y">
+									<label for="1y">Τον τελευταίο χρόνο</label> <br>
+									<input type="radio" name="time" id="more">
+									<label for="more">Περισσότερο από 1 χρόνο</label> <br>
+								</div>
 								<br>
 								<label for="payment">Πώς επιλέγεται να ολοκληρώνετε συνήθως τις ηλεκτρονικές σας αγορές;</label><br>
 								<select id="payment" name="payment">
@@ -101,13 +235,15 @@
 									<option value="paypal">PayPal</option>
 								</select> <br>
 								<label for="categories">Τι είδους προιόντα αγοράζετε συνήθως στο διαδίκτυο;</label>
-								<select name="categories" id="categories">
-									<option value="pc">Υπολογιστές</option>
-									<option value="tv">Τηλεοράσεις</option>
-									<option value="white">Οικιακές Συσκευές</option>
-									<option value="phones">Κινητά Τηλέφωνα</option>
-								</select>
+								<input type="text" name="categories" id="categories" list="categories_data">
+								<datalist id="categories_data">
+									<option>Υπολογιστές</option>
+									<option>Τηλεοράσεις</option>
+									<option>Οικιακές Συσκευές</option>
+									<option>Κινητά Τηλέφωνα</option>
+								</datalist>
 							</fieldset> <br>
+							
 							<input type="submit" value="Υποβολή">
 						</form>
 					</div>

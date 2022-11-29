@@ -524,15 +524,31 @@
     border-radius: 5px;   /*rounds the corner of the box*/
     background-color: #f0eeee;    /*changes the backround color*/
     padding: 20px;    /*spacing*/
+    font-family: Roboto;
   }
 
   .form label{
     margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   }
 
   .form p{
     margin-top: 0px;
     margin-bottom: 5px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    border-bottom: #051014 solid 1px;
+    background-color: lightgray;
+    border-radius: 10px;
+  }
+
+  .form fieldset {
+    border-radius: 5px;
+  }
+
+  .form fieldset legend{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: bold;
   }
 
   .form input:not([type=submit]):not([type="radio"]),.form textarea, .form select {   /*Style rules for textarea tag and all the inputs except the submit button */
@@ -564,6 +580,35 @@
     padding: 5px 10px;
   }
 
+  .card {
+    display: none;
+  }
+  .paypal {
+    display: none;
+  }
+
+  .new_address {
+    display: none;
+  }
+
+  .payment input[id="card"]:checked ~ .card {
+    display: block;
+  }
+
+  .payment input[id="Paypal"]:checked ~ .paypal {
+    display: block;
+  }
+
+  input[id="ano"]:checked ~ .new_address {
+    display: block;
+  }
+
+  .radios{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+  }
 /* Footer */
   footer {    /*creates the footer area*/
     text-align: center;   /*aligns text and elemnts to the center*/
