@@ -9,13 +9,17 @@ function init() {
 function addListeners() {
     let vPassword = document.getElementById("vpass");
     let birthDate = document.getElementById("bdate");
+    let mail = document.getElementById("email");
 
     vPassword.addEventListener('change',checkPassword);
     vPassword.addEventListener('input',checkPassword);
 
     birthDate.addEventListener('change',checkAge);
+
+    mail.addEventListener('change',checkMail);
 }
 
+//Reports to the user if the passwords he inserted are different
 function checkPassword(ev) {
     let vPassword = ev.target;
     vPassword.setCustomValidity("");
@@ -44,6 +48,17 @@ function checkAge(ev) {
         birthDate.setCustomValidity("You must be over 14 years old.");
         birthDate.reportValidity();
     }
+}
+
+//Reports to the user if mail  has at least 1 character before @, at least 2 characters after @ and at least 2 characters after the .
+function checkMail(ev) {
+    let mail = ev.target;
+    mail.setCustomValidity("");
+
+    if( !/(.+)@(.+){2,}\.(.+){2,}/.test(mail.value) ){
+        mail.setCustomValidity("Invalid mail");
+        mail.reportValidity();
+    } 
 }
 
 
